@@ -1,0 +1,72 @@
+{
+    "status": "ok",
+    "totalResults": 7,
+    "articles": [
+    {
+    "source": {
+    "id": "news24",
+    "name": "News24"
+    },
+    "author": "Muhammad Hussain",
+    "title": "SATURDAY PROFILE | Architect Sumayya Vally: Joburg's magic eroded as administrations changed",
+    "description": "Internationally-renowned architect and South African-born Sumayya Vally is changing the way we think about design, through her maverick thinking and stunning, historically significant designs. She invites Muhammad Hussain to chat with her virtually from Londo…",
+    "url": "https://www.news24.com/news24/opinions/analysis/saturday-profile-architect-sumayya-vally-joburgs-magic-eroded-as-administrations-changed-20230902",
+    "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/9233/92cfa45c35df4779a1e2d1c4b7244671.jpg",
+    "publishedAt": "2023-09-02T05:56:09",
+    "content": "Internationally-renowned architect and South African-born Sumayya Vally is changing the way we think about design, through her maverick thinking and stunning, historically significant designs. She in… [+237 chars]"
+    },
+   
+    {
+    "source": {
+    "id": "nhl-news",
+    "name": "NHL News"
+    },
+    "author": "Dan Rosen",
+    "title": "NHL considering more unique destinations after Global Series -- Melbourne",
+    "description": "As the NHL continues its final preparations to bring teams to the Southern Hemisphere for the first time in September, it is already considering other unique international cities that could host preseason games in future seasons, NHL Deputy Commissioner Bill …",
+    "url": "https://www.nhl.com/news/nhl-considering-more-unique-destinations-after-australia/c-345683814",
+    "urlToImage": "https://cms.nhl.bamgrid.com/images/photos/343354742/1024x576/cut.jpg",
+    "publishedAt": "2023-09-01T04:00:00Z",
+    "content": "STOCKHOLM -- As the NHL continues its final preparations to bring teams to the Southern Hemisphere for the first time in September, it is already considering other unique international cities that co… [+2807 chars]"
+    },
+    {
+    "source": {
+    "id": "australian-financial-review",
+    "name": "Australian Financial Review"
+    },
+    "author": "James Curran",
+    "title": "Australia’s international relations: Australia needs to look over its shoulder as it muscles up to China",
+    "description": "For all the talk of a multipolar world, two countries dominate the battle for primacy in Asia, leaving Australia to tread a fine line with its neighbours.",
+    "url": "http://www.afr.com/policy/foreign-affairs/why-australia-needs-to-look-over-its-shoulder-at-asia-20230829-p5e0en",
+    "urlToImage": "https://static.ffx.io/images/$zoom_0.3548%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_297%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/b0320300ea11ad6d180bfbadf6228e3614fbda68",
+    "publishedAt": "2023-09-01T03:41:04Z",
+    "content": "As the three leaders left their respective lecterns, a journalist threw a final, unscripted question to Biden. Mr President, are you winning the competition with China? And his answer was that Americ… [+7786 chars]"
+    },
+    {
+    "source": {
+    "id": "lequipe",
+    "name": "L'equipe"
+    },
+    "author": "L'EQUIPE",
+    "title": "Transferts : Crystal Palace recrute Jefferson Lerma",
+    "description": "Le milieu international colombien Jefferson Lerma, libre de tout contrat après cinq ans à Bournemouth, a signé trois ans à Crystal Palace, ce jeudi.",
+    "url": "https://www.lequipe.fr/Football/Actualites/Transferts-crystal-palace-recrute-jefferson-lerma/1401507",
+    "urlToImage": "https://medias.lequipe.fr/img-photo-jpg/jefferson-lerma-j-feeney-offside-presse-sports/1500000001795952/0:0,1426:1426-640-640-75/fdf8d.jpg",
+    "publishedAt": "2023-06-08T14:09:07+00:00",
+    "content": "Libre après cinq ans à Bournemouth, qui avait dépensé plus de 30 millions d'euros pour se l'offrir en 2018, le milieu international colombien Jefferson Lerma s'est engagé ce jeudi avec Crystal Palace… [+77 chars]"
+    },
+    {
+    "source": {
+    "id": "newsweek",
+    "name": "Newsweek"
+    },
+    "author": "Mark Davis",
+    "title": "Newsweek",
+    "description": "Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",
+    "url": "https://www.newsweek.com/",
+    "urlToImage": "https://d.newsweek.com/en/full/2202468/special-presidential-envoy-climate-john-kerry.jpg",
+    "publishedAt": "2023-03-01T12:07:28.8517009Z",
+    "content": null
+    }
+    ]
+    }
