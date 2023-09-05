@@ -21,27 +21,22 @@ export default class News extends Component {
 
 
   }
-  newsUpdate = async (page) => {
+  newsUpdate = async (page, category) => {
     this.setState({ loading: true });
-    let url = "https://newsapi.org/v2/everything?q=tesla&from=2023-08-03&sortBy=publishedAt&apiKey=7d1be05007f347bbb7e01e726825a52e&page=" + page + "&pageSize=20";
+
+    let url = "https://newsapi.org/v2/top-headlines?country=" + this.props.country + "&category=" + category + "&apiKey=7d1be05007f347bbb7e01e726825a52e&page=" + page + "&pageSize=" + this.props.pages;;
 
     let articles = await fetch(url);
     let parsedArticles = await articles.json();
 
-    // this.parsedArticles.articles.map((element)=>{
-    //   if(element.title===null || element.description===null || element.url===null || element.urlToImage
-    //     ==null){
-    //       element.pop();
-    //     }
 
-    // })
 
     this.setState({ articles: parsedArticles.articles, totalResults: parsedArticles.totalResults, loading: false });
 
   }
 
   async componentDidMount() {
-    this.newsUpdate(this.state.page);
+    this.newsUpdate(this.state.page, this.props.category);
 
 
 
@@ -49,31 +44,44 @@ export default class News extends Component {
   }
   handleForPrev = async () => {
     this.setState({ page: this.state.page - 1 })
-    this.newsUpdate(this.state.page);
+    this.newsUpdate(this.state.page, this.props.category);
 
   }
   handleForNext = async () => {
 
     this.setState({ page: this.state.page + 1 })
-    this.newsUpdate(this.state.page);
+    this.newsUpdate(this.state.page, this.props.category);
 
 
   }
 
 
   render() {
+    let category = this.props.category
+    category = category.charAt(0).toUpperCase() + category.slice(1);
     return (
+
       <div className="container my-3">
         <div className="row my-3">
           <h1 className="text-center">
             NewsMonkey - Top Headlines for Today
           </h1>
+          <h2 className="text-center">
+            Category : {category}
+
+          </h2>
           {this.state.loading && <Spinner />}
 
           {this.state.articles.map((element) => {
-            return <div className="col-md-3 my-3" key={element.url}>
-           { !this.state.loading &&  <NewsItems title={element.title.slice(0, 40)} description={element.description.slice(0, 260)} picUrl={element.urlToImage} url={element.url} />}
-            </div>
+            if (!(element.title === null || element.url === null || element.description === null || element.title==="[Removed]")) {
+              return (<div className="col-md-3 my-3" key={element.url}>
+                {!this.state.loading && <NewsItems title={element.title.slice(0, 40)} description={ element.description.slice(0, 160)} picUrl={element.urlToImage} url={element.url} author={element.author===null?"Unknown":element.author} time = {element.publishedAt} />}
+                
+              </div>)
+            }
+            else{
+              return null;
+            }
 
           })}
 
