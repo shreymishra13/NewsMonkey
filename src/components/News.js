@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import Spinner from './Spinner'
 
+
 export default class News extends Component {
 
 
@@ -22,12 +23,18 @@ export default class News extends Component {
 
   }
   newsUpdate = async (page, category) => {
+    this.props.setProgress(10);
+    
     this.setState({ loading: true });
-
-    let url = "https://newsapi.org/v2/top-headlines?country=" + this.props.country + "&category=" + category + "&apiKey=7d1be05007f347bbb7e01e726825a52e&page=" + page + "&pageSize=" + this.props.pages;;
-
+    this.props.setProgress(30);
+    
+    let url = "https://newsapi.org/v2/top-headlines?country=" + this.props.country + "&category=" + category + "&apiKey=7d1be05007f347bbb7e01e726825a52e&page=" + page + "&pageSize=" + this.props.pages;
+    this.props.setProgress(60);
+    
     let articles = await fetch(url);
+    this.props.setProgress(80);
     let parsedArticles = await articles.json();
+    this.props.setProgress(100);
 
 
 
@@ -71,6 +78,7 @@ export default class News extends Component {
 
           </h2>
           {this.state.loading && <Spinner />}
+          
 
           {this.state.articles.map((element) => {
             if (!(element.title === null || element.url === null || element.description === null || element.title==="[Removed]")) {

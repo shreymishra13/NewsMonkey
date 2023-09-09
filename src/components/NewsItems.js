@@ -15,6 +15,9 @@ export default class NewsItems extends Component {
                         <p className="card-text">{description}..</p>
                         <p className="card-text"><small className="text-muted">By <strong>{author}</strong> on {new Date(time).toGMTString()}</small></p>
                         <a href={url} className="btn btn-dark">Read full News</a>
+
+                        {/* Need to work here */}
+                        {/* <span className="badge badge-dark" style={{color:"white" , background:"red"}}>this is dark page</span> */}
                     </div>
                 </div>
 
