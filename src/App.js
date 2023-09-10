@@ -15,9 +15,11 @@ export default class App extends Component {
   state={
     progress:0
   }
-
+  
   setProgress=(progress)=>{
     this.setState({progress:progress})
+    console.log(process.env.REACT_APP_NEWS_APIKEY)
+   
   }
   render() {
     return (
